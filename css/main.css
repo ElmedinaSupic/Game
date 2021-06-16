@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* Ceha ti ovo ces riktat :D :D*/
+}
+
+.index {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 55px;
+}
+
+#forma {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#forma h1 {
+    text-align: center;
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+}
+
+.forma #username, .forma #password {
+    margin: 20px 0;
+    height: 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #999;
+}
+
+.forma #submit {
+    background-color: rgb(50, 200, 50);
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 5px;
+    margin: auto;
+    width: 200px;
+}
+
+.forma #submit:hover {
+    transform: scale(1.1);
+}
+
+.forma label {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+

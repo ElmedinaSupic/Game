@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <style>
+    .logout {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    button {
+      width: 100px;
+      height: 50px;
+      background-color: grey;
+      border: none;
+      outline: none;
+      margin: 50px;
+    }
+
+    a {
+      text-decoration: none;
+      border: 1px solid black;
+      padding: 10px 30px;
+    }
+
+    .linkoviGame {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .btn2 {
+      width: 100px;
+      height: auto;
+      margin: 0 20px;
+    }
+
+    .labele {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  </style>
+  <script type="text/javascript" src="js/checkLogin.js"></script>
+</head>
+
+<body>
+  <h1>Choose Game</h1>
+  <div class="linkoviGame">
+    <a class="btn btn-primary btn2" href="gamePvP.html">PvP</a><a class="btn btn-primary btn2" href="game.html">PvE</a>
+  </div>
+  <div class="labele">
+    <p>PvP - Player vs Player</p>
+    <p>PvE - Player vs Enviroment (Computer)</p>
+  </div>
+  <div class="logout">
+      <button class="btn btn-primary" onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+      function logout() {
+          sessionStorage.removeItem('user');
+          location.assign('index.html');
+      }
+  </script>
+</body>
+
+</html>
