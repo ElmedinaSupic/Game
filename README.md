@@ -1,2 +1,3 @@
 # Game five in a row
-School project for practice on HTML/CSS/JS tech.
+This is a game where you can choose between two options to play: PvP - Player vs Player and PvE - Player vs Enviroment (Computer). Who first get five in a row he is a winner.
+
